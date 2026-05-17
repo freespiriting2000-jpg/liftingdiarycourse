@@ -33,10 +33,10 @@ export default function RootLayout({
           <header className="flex justify-end gap-4 p-4">
             <Show when="signed-out">
               <SignInButton mode="modal">
-                <button className="px-4 py-2 rounded-md bg-black text-white text-sm font-medium hover:bg-zinc-700">Sign in</button>
+                <button className="px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: "rgb(144, 238, 144)" }}>Sign in</button>
               </SignInButton>
               <SignUpButton mode="modal">
-                <button className="px-4 py-2 rounded-md border border-black text-sm font-medium hover:bg-zinc-100">Sign up</button>
+                <button className="px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: "rgb(144, 238, 144)" }}>Sign up</button>
               </SignUpButton>
             </Show>
             <Show when="signed-in">
